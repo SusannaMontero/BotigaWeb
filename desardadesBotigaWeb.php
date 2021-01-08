@@ -29,14 +29,14 @@ class Registre {
 
         if ($files > 0)  {
 
-            echo ("Usuari no disponible");
+            echo ("Usuari ja existeix");
             
            
         }
         else    {
 
-            $vehicleInsert = new database;
-            $vehicleInsert -> insert($con, $dades, 'registre');
+            $dadesInsert = new database;
+            $dadesInsert -> insert($con, $dades, 'registre');
             die("Usuari desat correctament.");
         }
         
